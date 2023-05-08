@@ -1,0 +1,49 @@
+  if (n == 3) {
+            a = (harf[kontrol] * 100) + (harf[kontrol + 1] * 10) + (harf[kontrol + 2] * 1);
+            CX = a;
+          } else if (n == 2) {
+            a = (harf[kontrol] * 10) + (harf[kontrol + 1] * 1);
+            CX = a;
+          } else if (n == 1) {
+            a = (harf[kontrol] * 1);
+            CX = a;
+          }	
+
+
+
+
+
+
+
+
+harf[kontrol] == '0' || harf[kontrol] == '1' || harf[kontrol] == '2' || harf[kontrol] == '3' || harf[kontrol] == '4' || harf[kontrol] == '5' || harf[kontrol] == '6' || harf[kontrol] == '7' || harf[kontrol] == '8' || harf[kontrol] == '9'
+
+
+
+
+
+
+
+
+
+
+
+bu gereksiz olabilir
+
+else if (harf[kontrol] == '[') {
+      kontrol++;
+      if (harf[kontrol] == '0' || harf[kontrol] == '1' || harf[kontrol] == '2' || harf[kontrol] == '3' || harf[kontrol] == '4' || harf[kontrol] == '5' || harf[kontrol] == '6' || harf[kontrol] == '7' || harf[kontrol] == '8' || harf[kontrol] == '9') {
+        while (harf[kontrol] == '0' || harf[kontrol] == '1' || harf[kontrol] == '2' || harf[kontrol] == '3' || harf[kontrol] == '4' || harf[kontrol] == '5' || harf[kontrol] == '6' || harf[kontrol] == '7' || harf[kontrol] == '8' || harf[kontrol] == '9') {
+          kontrol++;
+        }
+        if (n == 3) {
+          a = (harf[kontrol] * 100) + (harf[kontrol + 1] * 10) + (harf[kontrol + 2] * 1);
+          DX = a;
+        } else if (n == 2) {
+          	a = (harf[kontrol] * 10) + (harf[kontrol + 1] * 1);
+          	DX = a;
+        } else if (n == 1) {
+          	a = (harf[kontrol] * 1);
+          	DX = a;
+        }
+      }
